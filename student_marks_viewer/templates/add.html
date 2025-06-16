@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student Marks</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #f8ffae, #43c6ac);
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            text-align: center;
+            color: #333;
+            
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: inline-block;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            width: 250px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>📝 Add Student Details</h1>
+
+    <form method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Roll Number</label>
+        <input type="text" name="roll" required placeholder="Enter roll number">
+
+        <label>Maths</label>
+        <input type="number" name="maths" required>
+
+        <label>Science</label>
+        <input type="number" name="science" required>
+
+        <label>English</label>
+        <input type="number" name="english" required>
+
+        <button type="submit">Submit</button>
+        <br>
+        <a href="/">← Back to Home</a>
+    </form>
+</body>
+</html>
